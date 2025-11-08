@@ -14,6 +14,7 @@
 | **Technology**     | Uses **Hypervisor** (e.g., VMware, VirtualBox) | Uses **Docker Engine** or container runtime |
 
 ### Architecture of Docker
+```mysql
 +---------------------------------------------------+
 |                   Docker CLI / API                |
 +---------------------------------------------------+
@@ -26,7 +27,7 @@
 +---------------------------------------------------+
 |                   Hardware                        |
 +---------------------------------------------------+
-
+```
 ### Components
 * Docker CLI -> you give a command.
 * Docker Engine -> Core part that builds and runs the containers.
