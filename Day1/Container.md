@@ -5,7 +5,6 @@
 * This makes the container faster, smaller and more efficient.
 
 ### Difference between Hypervisor and Container
-+-------------------------------------------------------------------------------------------------------------------+
 | Feature            | Virtual Machine (VM)                           | Container                                   |
 | ------------------ | ---------------------------------------------- | ------------------------------------------- |
 | **OS**             | Has its own full Guest OS                      | Shares host OS kernel                       |
@@ -13,7 +12,6 @@
 | **Startup Time**   | Minutes                                        | Seconds                                     |
 | **Resource Usage** | Heavy (each VM runs a full OS)                 | Lightweight                                 |
 | **Technology**     | Uses **Hypervisor** (e.g., VMware, VirtualBox) | Uses **Docker Engine** or container runtime |
-+-------------------------------------------------------------------------------------------------------------------+
 
 ### Architecture of Docker
 +---------------------------------------------------+
@@ -34,13 +32,12 @@
 * Docker Engine -> Core part that builds and runs the containers.
 * Docker Daemon -> Manages images, containers, network and volume.
 * Container Runtime -> Actually runs the container process.
-* 
-+------------------------------------------------------------------------------------------------+
+
+  
 | Term          | Description                                                                    |
 | ------------- | ------------------------------------------------------------------------------ |
 | **Image**     | A read-only template with app and environment configuration (like a blueprint) |
 | **Container** | A running instance of an image (like a live process)                           |
-+------------------------------------------------------------------------------------------------+
 
 ### Docker Life Cycle:
 Dockerfile -> Image -> Container -> Stop/Remove
