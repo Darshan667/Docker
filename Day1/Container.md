@@ -1,5 +1,5 @@
 # Docker
-### 1. What is Docker
+### 1. Containers
 * A container is a lightweight, standalone package that includes an application and all dependencies(libraries, binaries and configuration files).
 * Unlike virtual machines, containers don't include a full operating system - they share the host OS kernel.
 * This makes the container faster, smaller and more efficient.
