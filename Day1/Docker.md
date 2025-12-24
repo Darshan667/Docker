@@ -9,3 +9,54 @@ Docker has 2 edition
 1. community eddition
 2. Enterprise edition
 
+
+Run- start a container
+
+docker run nginx
+
+to list the containers
+docker ps 
+docker ps -a
+
+docker stop container_name
+
+docker images - to see the list of images
+
+docker rmi nginx - remove the image 
+
+docker pull nginx - download the image
+
+docker run ubuntu
+
+docker run ubuntu sleep s
+
+docker exec distracted_file cat /etc/hosts
+
+Run - attach and detach
+
+docker run -d /opt/webapp - run in the background
+
+docker attach a043d(id)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
