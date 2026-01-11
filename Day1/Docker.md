@@ -5,18 +5,21 @@ images to create containers and also push these containers to container registri
 
 
 
-Docker has 2 edition 
-1. community eddition
-2. Enterprise edition
+Docker has 2 editions 
+1. Community Edition
+2. Enterprise Edition
 
 
-Run- start a container
-
+### Run- start a container
+```docker
 docker run nginx
+```
 
-to list the containers
+### To list the containers
+```docker
 docker ps 
 docker ps -a
+```
 
 docker stop container_name
 
