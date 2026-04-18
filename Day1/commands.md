@@ -1,4 +1,4 @@
-## 🚀 1. Running a Container
+##  1. Running a Container
 
 To run a container from an image:
 
@@ -6,7 +6,7 @@ To run a container from an image:
 docker run redis
 ```
 
-👉 This will download the **latest Redis image** (if not present) and run it.
+This will download the **latest Redis image** (if not present) and run it.
 
 If you want a **specific version**:
 
@@ -14,14 +14,14 @@ If you want a **specific version**:
 docker run redis:4.0
 ```
 
-👉 Here, `4.0` is the version (tag).
+ Here, `4.0` is the version (tag).
 
 ---
 
-## 🎮 2. Interactive Mode (STDIN)
+##  2. Interactive Mode (STDIN)
 
 By default, Docker containers run in **non-interactive mode**
-👉 That means they **don’t accept input from keyboard**
+ That means they **don’t accept input from keyboard**
 
 ### 🔹 Run in interactive mode:
 
@@ -29,11 +29,11 @@ By default, Docker containers run in **non-interactive mode**
 docker run -i redis
 ```
 
-👉 `-i` = keeps STDIN open (you can give input)
+ `-i` = keeps STDIN open (you can give input)
 
 ---
 
-## 💻 3. Terminal Access (Pseudo TTY)
+##  3. Terminal Access (Pseudo TTY)
 
 If you want a proper terminal (like Linux shell):
 
@@ -41,42 +41,42 @@ If you want a proper terminal (like Linux shell):
 docker run -it redis
 ```
 
-👉 `-it` = interactive + terminal
-👉 Now you get a **prompt inside the container**
+ `-it` = interactive + terminal
+ Now you get a **prompt inside the container**
 
 ---
 
-## 🌐 4. Port Mapping
+##  4. Port Mapping
 
 Containers run in isolation, so we map ports to access them from outside.
 
-### 🔹 Example:
+###  Example:
 
 ```bash
 docker run -p 80:5000 redis
 ```
 
-👉 Format:
+ Format:
 
 ```
 host_port : container_port
 ```
 
-👉 Access app via **host port (80)** → internally goes to **5000**
+ Access app via **host port (80)** → internally goes to **5000**
 
 ---
 
-### 🔹 MySQL Example:
+###  MySQL Example:
 
 ```bash
 docker run -p 3306:3306 mysql
 ```
 
-👉 Same port mapping for database access
+ Same port mapping for database access
 
 ---
 
-⚠️ Note:
+ Note:
 
 * One host port can be mapped to **only one container at a time**
 
@@ -85,25 +85,25 @@ docker run -p 3306:3306 mysql
 ## 💾 5. Volume Mapping (Data Persistence)
 
 By default:
-👉 If container is deleted → **data is lost**
+ If container is deleted → **data is lost**
 
-### 🔹 To persist data:
+###  To persist data:
 
 ```bash
 docker run -v /opt/datadir:/var/lib/mysql mysql
 ```
 
-👉 Format:
+ Format:
 
 ```
 host_directory : container_directory
 ```
 
-👉 Data will be saved in `/opt/datadir` even if container is removed
+ Data will be saved in `/opt/datadir` even if container is removed
 
 ---
 
-## 🔍 6. Inspect Container
+##  6. Inspect Container
 
 To see detailed information about a container:
 
@@ -111,7 +111,7 @@ To see detailed information about a container:
 docker inspect redis
 ```
 
-👉 Shows:
+ Shows:
 
 * IP address
 * Config
@@ -120,7 +120,7 @@ docker inspect redis
 
 ---
 
-## 📜 7. Container Logs
+##  7. Container Logs
 
 To check logs of a container:
 
